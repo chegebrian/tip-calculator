@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --Strong-cyan: hsl(172, 67%, 45%);
+
+  /* Neutral */
+
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  --Font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--Light-grayish-cyan);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.app{
+  display:flex;
+  align-items: stretch;
+  padding:1.25em;
+  border-radius:0.5em;
+  background-color:var(--White);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  color:var(--Very-light-grayish-cyan);
+  background-color:var(--Very-dark-cyan);
+  outline:none;
+  border:0;
+  padding: 0.5em 1.5em;
+  border-radius:0.5em;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background-color:var(--Light-grayish-cyan);
+  color:var(--Very-dark-cyan);
+}
+
+.select-tip{
+  display:flex;
+  align-items: center;
+  gap:0.5em;
+  flex-wrap: wrap;
+}
+
+input[type="number"]{
+  padding: 0.5em 1.5em;
+  outline:none;
+  border:0;
+  border-radius:0.5em;
+  background-color:var(--Light-grayish-cyan);
+  color:var(--Very-dark-cyan);
+}
+
+.flex-col{
+  display:flex;
+  flex-direction:column;
+}
+
+.margin{
+  margin: 1em 0em;
+}
+
+.flex{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5em;
+}
+
+.margin-bottom {
+  margin-bottom:1em;
+}
+
+.dark-background{
+  background-color:var(--Very-dark-cyan)
+}
+
+.spacing{
+  padding: 1em 1em;
+  border-radius:0.5em;
+}
+
+.reset-btn {
+  color:var(--Very-dark-cyan);
+  background-color:var(--Very-light-grayish-cyan);
+  outline:none;
+  border:0;
+  padding: 0.5em 1.5em;
+  border-radius:0.5em;
+  cursor:pointer;
+  font-weight:bold;
 }
